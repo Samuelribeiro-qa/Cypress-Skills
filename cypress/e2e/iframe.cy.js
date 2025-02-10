@@ -12,7 +12,7 @@ describe('IFrame', ()=> {
             .then(($iframe)=> {
                 const $body = $iframe.contents().find('body')
 
-                cy.wrap($body,  {timeout: 7000})
+                cy.wrap($body)
                     .find('#fullname')
                     .type('Samuel Vinicius')
             })
